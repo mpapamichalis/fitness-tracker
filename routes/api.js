@@ -1,4 +1,4 @@
-app.get("/api/workouts", (req, res) => {
+app.get("/api/workout", (req, res) => {
         db.Workout.aggregate([
            {
             $addFields: {
@@ -12,7 +12,7 @@ app.get("/api/workouts", (req, res) => {
         })
 })
 
-app.post("/api/workouts", (req, res) => {
+app.post("/api/workout", (req, res) => {
     db.Workout.create(req.body)
     .then(workout => {
         res.json(workout); 
