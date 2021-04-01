@@ -15,6 +15,7 @@
     "express": "^4.16.3",
     "mongodb-uri": "^0.9.7",
     "mongoose": "^5.12.3",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "node-express-mongodb-jwt-rest-api-skeleton": "^9.0.4"
   }
 }

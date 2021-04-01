@@ -5,7 +5,7 @@ module.exports = (app) => {
 
 
 app.get("/api/workout", (req, res) => {
-        db.workout.aggregate([
+        db.fitness.aggregate([
            {
             $addFields: {
                 totalDuration: { $sum: "$exercises.duration" }
@@ -19,7 +19,7 @@ app.get("/api/workout", (req, res) => {
 });
 
 app.post("/api/workout", (req, res) => {
-    db.Workout.create(req.body)
+    db.fitness.create(req.body)
     .then(workout => {
         res.json(workout); 
     })
