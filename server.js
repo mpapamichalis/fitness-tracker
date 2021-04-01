@@ -6,7 +6,7 @@ const logger = require("morgan");
 const PORT = process.env.PORT || 3000;
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb+srv:thatsnotart:2N@LA4oreo@cluster0.dxula.mongodb.net/fitness?retryWrites=true&w=majority",
+  process.env.MONGODB_URI || "mongodb://localhost/fitness",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
